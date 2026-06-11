@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zaryab Gill | Frontend Developer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{background:#070707;color:#e5e7eb}
+#cursorGlow{position:fixed;width:180px;height:180px;border-radius:50%;pointer-events:none !important;background:radial-gradient(circle,rgba(0,255,136,.18),transparent 70%);transform:translate(-50%,-50%);z-index:9999}
+.matrix{position:fixed;inset:0;opacity:.05;pointer-events:none !important;background-image:linear-gradient(#00ff8840 1px,transparent 1px),linear-gradient(90deg,#00ff8840 1px,transparent 1px);background-size:40px 40px}
+.skill{transition:1.5s}
+.card:hover{transform:translateY(-8px)}
+.typing{border-right:2px solid #00ff88;white-space:nowrap;overflow:hidden}
+</style>
+</head>
+<body>
+<div class="matrix"></div>
+<div id="cursorGlow"></div>
+
+<nav class="sticky top-0 backdrop-blur bg-black/70 border-b border-green-500/20 z-50">
+<div class="max-w-6xl mx-auto flex justify-between p-4">
+<h1 class="font-bold text-green-400">ZARYAB_GILL</h1>
+<div class="space-x-4 text-sm">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="max-w-6xl mx-auto min-h-screen flex items-center px-6">
+<div>
+<p class="text-green-400 mb-2">&gt; initializing portfolio...</p>
+<h1 class="text-5xl md:text-7xl font-black">Zaryab Gill</h1>
+<h2 id="type" class="typing text-cyan-400 text-2xl mt-3 h-10"></h2>
+<p class="max-w-2xl mt-6 text-gray-300">Turning ideas into interactive web experiences through clean code and creative design.</p>
+<div class="mt-8 flex gap-4">
+<a href="assets/zari_CV.pdf" download class="px-6 py-3 bg-cyan-500 text-black font-bold rounded-lg hover:bg-cyan-400 transition">
+Download CV
+</a>
+<a href="#projects" class="px-6 py-3 border border-green-500 rounded">View Projects</a>
+</div>
+</div>
+</section>
+
+<section id="about" class="max-w-6xl mx-auto px-6 py-16">
+<h2 class="text-3xl font-bold text-green-400 mb-6">About Me</h2>
+<p>I’m Zaryab Gill, a BSCS student and aspiring Frontend Developer. I build responsive websites using HTML, CSS, Tailwind CSS, JavaScript and Bootstrap. My projects include calculators, landing pages, forms, portfolios and collaborative development work. Currently, I am learning Python and expanding my programming skills.</p>
+</section>
+
+<section id="skills" class="max-w-6xl mx-auto px-6 py-16">
+<h2 class="text-3xl font-bold text-green-400 mb-8">Skills</h2>
+<div class="space-y-4">
+<div><p>HTML</p><div class="bg-gray-800 h-3 rounded"><div class="skill bg-green-500 h-3 rounded" style="width:95%"></div></div></div>
+<div><p>CSS</p><div class="bg-gray-800 h-3 rounded"><div class="skill bg-green-500 h-3 rounded" style="width:90%"></div></div></div>
+<div><p>Tailwind CSS</p><div class="bg-gray-800 h-3 rounded"><div class="skill bg-green-500 h-3 rounded" style="width:88%"></div></div></div>
+<div><p>JavaScript</p><div class="bg-gray-800 h-3 rounded"><div class="skill bg-green-500 h-3 rounded" style="width:80%"></div></div></div>
+<div><p>Bootstrap</p><div class="bg-gray-800 h-3 rounded"><div class="skill bg-green-500 h-3 rounded" style="width:85%"></div></div></div>
+<div><p>Currently Learning: Python</p><div class="bg-gray-800 h-3 rounded"><div class="skill bg-cyan-500 h-3 rounded" style="width:45%"></div></div></div>
+</div>
+</section>
+
+<section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+<h2 class="text-3xl font-bold text-green-400 mb-8">Projects</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="card bg-zinc-900 p-6 rounded-xl border border-zinc-800"><h3>Calculator App</h3><p>JavaScript calculator.</p></div>
+<div class="card bg-zinc-900 p-6 rounded-xl border border-zinc-800"><h3>Fastava Landing Page</h3><p>Bootstrap responsive landing page.</p></div>
+<div class="card bg-zinc-900 p-6 rounded-xl border border-zinc-800"><h3>Forms Collection</h3><p>Modern forms and validation.</p></div>
+<div class="card bg-zinc-900 p-6 rounded-xl border border-zinc-800"><h3>Student Portfolio</h3><p>Personal portfolio website.</p></div>
+<div class="card bg-zinc-900 p-6 rounded-xl border border-zinc-800"><h3>CollaborativeCode</h3><p>Team collaboration project.</p></div>
+<div class="card bg-zinc-900 p-6 rounded-xl border border-zinc-800"><h3>Random Module Games</h3><p>Python learning games.</p></div>
+</div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 py-16">
+<h2 class="text-3xl font-bold text-green-400 mb-8">Blog</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-zinc-900 p-5 rounded-xl">How I Started Learning Web Development</div>
+<div class="bg-zinc-900 p-5 rounded-xl">My BSCS Journey</div>
+<div class="bg-zinc-900 p-5 rounded-xl">Why Every Developer Needs GitHub</div>
+</div>
+</section>
+
+<section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+<h2 class="text-3xl font-bold text-green-400 mb-8">Contact</h2>
+<form class="grid gap-4 max-w-xl">
+<input id="name"
+class="bg-zinc-900 p-3 rounded"
+placeholder="Name" required>
+<input id="email"
+type="email"
+class="bg-zinc-900 p-3 rounded"
+placeholder="Email" required>
+<textarea class="bg-zinc-900 p-3 rounded" rows="5" placeholder="Message"></textarea>
+<button type="submit" class="bg-green-500 text-black p-3 rounded font-bold">Send Message</button>
+</form>
+<div class="mt-8">
+<p>Email: zuryabgill838@gmail.com</p>
+<p>Phone: 03124578911</p>
+<p>GitHub: zuryabgill838-max</p>
+<p>LinkedIn: linkedin.com/in/zuryab-gill</p>
+</div>
+</section>
+
+<script>
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+
+    alert("Thank you " + name + "! Your message has been submitted.");
+
+    form.reset();
+});
+</script>
+</body>
+</html>
